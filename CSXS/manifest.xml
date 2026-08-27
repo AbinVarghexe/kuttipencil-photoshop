@@ -10,9 +10,10 @@
     
     <ExecutionEnvironment>
         <HostList>
-            <!-- Photoshop Support (CS6 through CC 2024+) -->
+            <!-- Photoshop & Illustrator Support (CS6 through CC 2024+) -->
             <Host Name="PHSP" Version="[13.0,99.9]" />
             <Host Name="PHXS" Version="[13.0,99.9]" />
+            <Host Name="ILST" Version="[16.0,99.9]" />
         </HostList>
         <LocaleList>
             <Locale Code="All" />

@@ -441,12 +441,23 @@
      * Initialization
      */
     function init() {
+        var hostEnv = csInterface.getHostEnvironment();
+        var appId = hostEnv ? hostEnv.appId : "";
+        var isIllustrator = (appId === "ILST");
+
+        if (btnInsertLayer) {
+            var btnLabel = btnInsertLayer.querySelector('span:not(.kp-icon)');
+            if (btnLabel) {
+                btnLabel.textContent = isIllustrator ? "Insert to AI" : "Insert to PS";
+            }
+        }
+
         setupTabs();
         setupModeToggle();
         setupEvents();
         scanPhotoshopFonts();
         updateCounts("");
-        updateStatus("KuttiPencil Ready", false);
+        updateStatus(isIllustrator ? "Illustrator Ready" : "Photoshop Ready", false);
     }
 
     window.addEventListener('DOMContentLoaded', init);

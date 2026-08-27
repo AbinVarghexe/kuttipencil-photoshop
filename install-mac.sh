@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # =======================================================
-#   കുട്ടിപെൻസിൽ for Adobe Photoshop - 1-Click Installer (macOS)
+#   കുട്ടിപെൻസിൽ for Photoshop & Illustrator - 1-Click Installer (macOS)
 # =======================================================
 
 echo "======================================================="
-echo "   കുട്ടിപെൻസിൽ for Adobe Photoshop - Installer v1.0.0"
+echo "   കുട്ടിപെൻസിൽ for Photoshop & Illustrator - Installer"
 echo "======================================================="
 echo ""
 
 # 1. Enable PlayerDebugMode in macOS plist preferences
-echo "[1/3] Enabling Photoshop CEP PlayerDebugMode on macOS..."
+echo "[1/3] Enabling Adobe CEP PlayerDebugMode on macOS..."
 for v in 9 10 11 12 13 14 15 16; do
     defaults write com.adobe.CSXS.$v PlayerDebugMode 1 2>/dev/null
 done
@@ -41,8 +41,10 @@ echo ""
 echo "======================================================="
 echo " INSTALLATION COMPLETE!"
 echo ""
-echo " How to use:"
-echo " 1. Restart Adobe Photoshop."
-echo " 2. Go to: Window -> Extensions (legacy) -> Kutti Pencil"
+echo " How to use in Photoshop:"
+echo " 1. Restart Photoshop -> Window -> Extensions (legacy) -> Kutti Pencil"
+echo ""
+echo " How to use in Illustrator:"
+echo " 1. Restart Illustrator -> Window -> Extensions -> Kutti Pencil"
 echo "======================================================="
 echo ""

@@ -22,6 +22,7 @@
 
 <p align="center">
   <strong>The Essential Malayalam Typography &amp; FML/ML-TT Font Converter Extension for Adobe Photoshop.</strong><br/>
+  <em>Created &amp; Developed by <strong><a href="https://github.com/AbinVarghexe">Abin Varghese</a></strong></em><br/>
   <em>Type in Manglish or Malayalam Unicode directly inside Photoshop and render legacy ML/FML fonts with one click.</em>
 </p>
 
@@ -160,10 +161,21 @@ kuttipencil/
 
 ---
 
-## ⚖️ Disclaimer & Attribution
+## 👨‍💻 Author & Creator
 
-- **Inspiration**: This project is an independent, open-source community extension inspired by [kuttipencil.in](https://kuttipencil.in), created by **LEO Softwares / Sindhu PV** (Kozhikode, Kerala).
-- **Trademarks**: "കുട്ടിപെൻസിൽ" and "Kuttipencil" are properties of their respective owners. This extension is not officially affiliated with LEO Softwares, but was built with profound respect for their contribution to Malayalam digital computing.
+This Adobe Photoshop Extension was designed, developed, and engineered by:
+
+**Abin Varghese**
+- **GitHub**: [@AbinVarghexe](https://github.com/AbinVarghexe)
+- **Repository**: [kuttipencil-photoshop](https://github.com/AbinVarghexe/kuttipencil-photoshop)
+
+---
+
+## ⚖️ Credits & Inspiration
+
+- **Photoshop Extension Developer**: **Abin Varghese** built and open-sourced this native Photoshop plugin.
+- **Inspiration**: The workflow and typing utility concept was inspired by the online web utility [kuttipencil.in](https://kuttipencil.in) (developed by LEO Softwares / Sindhu PV). We express our gratitude for their pioneering work in Malayalam web typing.
+- **Trademarks**: "കുട്ടിപെൻസിൽ" and "Kuttipencil" brand names are properties of their respective owners. This is an independent open-source plugin created by Abin Varghese for the designer and typography community.
 
 ---
 
@@ -172,5 +184,5 @@ kuttipencil/
 This project is licensed under the **[MIT License](LICENSE)**.
 
 <div align="center">
-  <sub>Built with ❤️ for Malayalam Graphic Designers &amp; Typographers.</sub>
+  <sub>Created with ❤️ by <strong>Abin Varghese</strong> for Malayalam Graphic Designers &amp; Typographers.</sub>
 </div>

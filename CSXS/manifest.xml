@@ -54,6 +54,11 @@
                         </MaxSize>
                     </Geometry>
                     <Icons>
+                        <Icon Type="Normal">./assets/icons/icon-normal.png</Icon>
+                        <Icon Type="RollOver">./assets/icons/icon-rollover.png</Icon>
+                        <Icon Type="Disabled">./assets/icons/icon-normal.png</Icon>
+                        <Icon Type="DarkNormal">./assets/icons/icon-dark.png</Icon>
+                        <Icon Type="DarkRollOver">./assets/icons/icon-dark-rollover.png</Icon>
                     </Icons>
                 </UI>
             </DispatchInfo>

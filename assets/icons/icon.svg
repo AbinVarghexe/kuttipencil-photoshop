@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Shadow & Gradients -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="pencilYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="50%" stop-color="#FBC02D"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </linearGradient>
+    <linearGradient id="pencilWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#FFCC80"/>
+    </linearGradient>
+    <linearGradient id="eraserRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="100%" stop-color="#D32F2F"/>
+    </linearGradient>
+    <linearGradient id="metalFerrule" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E0E0E0"/>
+      <stop offset="50%" stop-color="#BDBDBD"/>
+      <stop offset="100%" stop-color="#9E9E9E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background App Rounded Container -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#dropShadow)"/>
+
+  <!-- KuttiPencil Stylized Drawing -->
+  <g transform="translate(6, 6) rotate(-10 26 26)">
+    <!-- Yellow Pencil Main Body -->
+    <path d="M16 38 L24 46 L46 24 L38 16 Z" fill="url(#pencilYellow)"/>
+    <!-- Pencil Highlights / Facets -->
+    <path d="M19 41 L24 46 L46 24 L41 19 Z" fill="#F57F17" opacity="0.3"/>
+    <line x1="22" y1="32" x2="34" y2="20" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Wood Tip -->
+    <path d="M16 38 L24 46 L10 50 Z" fill="url(#pencilWood)"/>
+    <!-- Graphite Lead Tip -->
+    <path d="M10 50 L12.5 48.5 L14.5 46.5 L10 50 Z" fill="#263238"/>
+    <path d="M10 50 L13 47 L11.5 45.5 Z" fill="#37474F"/>
+
+    <!-- Metal Ferrule / Collar -->
+    <path d="M38 16 L46 24 L49 21 L41 13 Z" fill="url(#metalFerrule)"/>
+    <line x1="40" y1="14" x2="48" y2="22" stroke="#FFFFFF" stroke-width="0.8" opacity="0.7"/>
+
+    <!-- Red Eraser Cap -->
+    <path d="M41 13 L49 21 Q55 15 50 10 Q45 5 41 13 Z" fill="url(#eraserRed)"/>
+  </g>
+</svg>

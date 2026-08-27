@@ -4,13 +4,21 @@
 
 <br/>
 
+[![Version](https://img.shields.io/badge/Release-v1.0.0-DC2626?style=for-the-badge&logo=github)](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/tag/v1.0.0)
 [![Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-CC%202015%20--%202024%2B-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)](#-system-requirements)
-[![CEP Version](https://img.shields.io/badge/CEP-9.0%20--%2014.0-E53935?style=for-the-badge)](#-system-requirements)
 [![Platform](https://img.shields.io/badge/OS-Windows%20%7C%20macOS-475569?style=for-the-badge)](#-installation)
 [![License](https://img.shields.io/badge/License-MIT-16A34A?style=for-the-badge)](LICENSE)
 [![Inspired by](https://img.shields.io/badge/Inspired%20by-Kuttipencil.in-DC2626?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kuttipencil.in)
 
 <br/>
+
+# 📦 Download v1.0.0 Release
+
+### **[👉 Click Here to Download KuttiPencil-PS-v1.0.0.zip](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/download/v1.0.0/KuttiPencil-PS-v1.0.0.zip)**
+
+*Includes 1-Click Automated Installers for both Windows and macOS.*
+
+---
 
 <p align="center">
   <strong>The Essential Malayalam Typography &amp; FML/ML-TT Font Converter Extension for Adobe Photoshop.</strong><br/>
@@ -18,6 +26,39 @@
 </p>
 
 </div>
+
+---
+
+## ⚡ Quick 1-Click Installation Guide
+
+Installing KuttiPencil is completely automated for both **Windows** and **macOS**:
+
+### 🪟 For Windows Users
+
+1. **Download and Extract**:
+   - Download **[KuttiPencil-PS-v1.0.0.zip](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/download/v1.0.0/KuttiPencil-PS-v1.0.0.zip)** and extract the zip file.
+2. **Run the Installer**:
+   - Double-click **`install-windows.bat`**.
+   - *(It will automatically configure Photoshop registry permissions and copy the extension to your Adobe CEP directory)*.
+3. **Launch in Photoshop**:
+   - Restart **Adobe Photoshop**.
+   - Open **`Window`** $\rightarrow$ **`Extensions (legacy)`** $\rightarrow$ **`Kutti Pencil`**.
+
+---
+
+### 🍎 For macOS Users
+
+1. **Download and Extract**:
+   - Download **[KuttiPencil-PS-v1.0.0.zip](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/download/v1.0.0/KuttiPencil-PS-v1.0.0.zip)** and extract the folder.
+2. **Run the Installer**:
+   - Open **Terminal**, navigate to the extracted folder, and run:
+     ```bash
+     chmod +x install-mac.sh && ./install-mac.sh
+     ```
+   - *(Alternatively, right-click `install-mac.sh` and choose Open with Terminal)*.
+3. **Launch in Photoshop**:
+   - Restart **Adobe Photoshop**.
+   - Open **`Window`** $\rightarrow$ **`Extensions (legacy)`** $\rightarrow$ **`Kutti Pencil`**.
 
 ---
 
@@ -89,59 +130,6 @@ KuttiPencil-PS automatically connects with your system's installed Malayalam fon
 
 ---
 
-## 🚀 Installation Guide
-
-### Option 1: Automated 1-Click Install (Windows)
-
-1. **Clone or Download** the repository:
-   ```bash
-   git clone https://github.com/AbinVarghexe/kuttipencil-photoshop.git
-   ```
-2. Double-click **`enable-debug-mode.bat`** (enables CEP developer extension loading).
-3. Double-click **`install-extension.bat`** (installs extension into your Photoshop CEP folder).
-4. Restart **Adobe Photoshop**.
-5. Open via: **`Window`** $\rightarrow$ **`Extensions (legacy)`** $\rightarrow$ **`Kutti Pencil`**.
-
----
-
-### Option 2: Manual Installation
-
-<details>
-<summary><strong>Windows Manual Setup</strong> (Click to Expand)</summary>
-
-1. Press <kbd>Win</kbd> + <kbd>R</kbd>, type `regedit`, and hit <kbd>Enter</kbd>.
-2. Navigate to `HKEY_CURRENT_USER\Software\Adobe\CSXS.9` (create key if missing).
-3. Add a new **String Value (`REG_SZ`)** named `PlayerDebugMode` with value `1`. Repeat for `CSXS.10` through `CSXS.14`.
-4. Copy the entire `kuttipencil` directory to:
-   ```
-   C:\Users\<YourUsername>\AppData\Roaming\Adobe\CEP\extensions\kuttipencil
-   ```
-5. Restart Photoshop and open **Window > Extensions (legacy) > Kutti Pencil**.
-
-</details>
-
-<details>
-<summary><strong>macOS Manual Setup</strong> (Click to Expand)</summary>
-
-1. Open **Terminal** and enable `PlayerDebugMode`:
-   ```bash
-   defaults write com.adobe.CSXS.9 PlayerDebugMode 1
-   defaults write com.adobe.CSXS.10 PlayerDebugMode 1
-   defaults write com.adobe.CSXS.11 PlayerDebugMode 1
-   defaults write com.adobe.CSXS.12 PlayerDebugMode 1
-   defaults write com.adobe.CSXS.13 PlayerDebugMode 1
-   defaults write com.adobe.CSXS.14 PlayerDebugMode 1
-   ```
-2. Copy the `kuttipencil` folder into:
-   ```bash
-   ~/Library/Application Support/Adobe/CEP/extensions/kuttipencil
-   ```
-3. Restart Photoshop and open **Window > Extensions (legacy) > Kutti Pencil**.
-
-</details>
-
----
-
 ## 📁 Repository Structure
 
 ```
@@ -164,8 +152,8 @@ kuttipencil/
 ├── .debug                    # Remote Chrome DevTools debug port (8088)
 ├── .gitignore                # Git ignore rules
 ├── LICENSE                   # MIT License
-├── enable-debug-mode.bat     # Windows debug mode registry script
-├── install-extension.bat    # Windows CEP extension deploy script
+├── install-windows.bat       # Automated 1-click Windows installer
+├── install-mac.sh           # Automated 1-click macOS installer
 ├── index.html                # 3-Tab Kuttipencil Panel UI
 └── README.md                 # Complete documentation & usage guide
 ```

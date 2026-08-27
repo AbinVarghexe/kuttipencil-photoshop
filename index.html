@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuttiPencil - Malayalam Typing Utility</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="kp-app">
+        <!-- Top Kuttipencil Header -->
+        <header class="kp-header">
+            <div class="kp-brand">
+                <svg class="kp-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 28L8 32L30 10L26 6L4 28Z" fill="#FBC02D"/>
+                    <path d="M2 34L6 34L4 28L2 34Z" fill="#424242"/>
+                    <path d="M26 6L30 10L33 7L29 3L26 6Z" fill="#E53935"/>
+                    <path d="M12 20L16 24" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <div class="kp-brand-text">
+                    <h1 class="kp-title">കുട്ടിപെൻസിൽ</h1>
+                    <span class="kp-subtitle">Malayalam Typing Utility</span>
+                </div>
+            </div>
+            <div class="kp-header-actions">
+                <button type="button" id="btn-insert-layer" class="kp-btn-action primary" title="Insert as New Text Layer in Photoshop">
+                    <svg class="kp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <span>Insert to PS</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 3 Clean Navigation Tabs (Convert, Decode, Export) -->
+        <nav class="kp-nav-tabs">
+            <button type="button" class="kp-tab-btn active" data-tab="tab-convert">
+                <svg class="kp-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 3 21 3 21 8"></polyline>
+                    <line x1="4" y1="20" x2="21" y2="3"></line>
+                    <polyline points="21 16 21 21 16 21"></polyline>
+                    <line x1="15" y1="15" x2="21" y2="21"></line>
+                    <line x1="4" y1="4" x2="9" y2="9"></line>
+                </svg>
+                <span>Convert</span>
+            </button>
+            <button type="button" class="kp-tab-btn" data-tab="tab-decode">
+                <svg class="kp-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="1 4 1 10 7 10"></polyline>
+                    <polyline points="23 20 23 14 17 14"></polyline>
+                    <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+                </svg>
+                <span>Decode</span>
+            </button>
+            <button type="button" class="kp-tab-btn" data-tab="tab-export">
+                <svg class="kp-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Export</span>
+            </button>
+        </nav>
+
+        <!-- Tab 1: Convert (Malayalam -> FML) -->
+        <main id="tab-convert" class="kp-tab-pane active">
+            <!-- Toolbar with Mode & Quick Tools -->
+            <div class="kp-toolbar">
+                <div class="kp-tool-icons">
+                    <button type="button" id="btn-clear-input" class="kp-icon-btn" title="Clear Text">
+                        <svg class="kp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </button>
+                    <button type="button" id="btn-copy-fml" class="kp-icon-btn" title="Copy FML Code">
+                        <svg class="kp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                    <button type="button" id="btn-update-layer" class="kp-icon-btn" title="Update Selected Layer in Photoshop">
+                        <svg class="kp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <polyline points="1 20 1 14 7 14"></polyline>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="kp-mode-selectors">
+                    <label class="kp-radio-label">
+                        <input type="radio" name="typingMode" value="manglish" id="mode-manglish" checked>
+                        <span>Manglish</span>
+                    </label>
+                    <label class="kp-radio-label">
+                        <input type="radio" name="typingMode" value="unicode" id="mode-unicode">
+                        <span>Direct Unicode</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Target Font Row -->
+            <div class="kp-font-bar">
+                <div class="kp-font-label-group">
+                    <svg class="kp-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                        <line x1="9" y1="20" x2="15" y2="20"></line>
+                        <line x1="12" y1="4" x2="12" y2="20"></line>
+                    </svg>
+                    <span class="kp-font-title">Target Font:</span>
+                </div>
+                <div class="kp-font-select-wrap">
+                    <select id="font-select" class="kp-select">
+                        <option value="auto">ML-TTIndulekhaHeavy (Default)</option>
+                    </select>
+                    <button type="button" id="btn-refresh-fonts" class="kp-btn-mini" title="Refresh Font Library">
+                        <svg class="kp-icon xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 4v6h-6M1 20v-6h6"></path>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Editor Cards -->
+            <div class="kp-main-editor">
+                <div class="kp-editor-container">
+                    <textarea id="input-text" class="kp-textarea" placeholder="ഇവിടെ മലയാളത്തിൽ ടൈപ്പ് ചെയ്യുക (Type in Manglish e.g. namaskaram)..." rows="4"></textarea>
+                    
+                    <div id="suggestion-bar" class="kp-suggestions" style="display: none;">
+                        <span class="kp-sug-tag" id="suggest-1"></span>
+                        <span class="kp-sug-tag" id="suggest-2"></span>
+                        <span class="kp-sug-tag" id="suggest-3"></span>
+                    </div>
+                </div>
+
+                <div class="kp-code-box">
+                    <div class="kp-code-header">
+                        <span class="kp-code-title">Converted FML Code</span>
+                        <span id="copy-feedback" class="kp-copy-badge">Click to Copy</span>
+                    </div>
+                    <textarea id="output-fml" class="kp-textarea code" placeholder="FML code will appear here..." rows="3" readonly></textarea>
+                </div>
+            </div>
+        </main>
+
+        <!-- Tab 2: Decode (FML -> Unicode) -->
+        <main id="tab-decode" class="kp-tab-pane">
+            <div class="kp-main-editor">
+                <div class="kp-editor-container">
+                    <div class="kp-card-top-row">
+                        <span class="kp-font-title">Paste FML / ML-TT Code</span>
+                        <button type="button" id="btn-read-ps-layer" class="kp-btn-text">
+                            <svg class="kp-icon xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Read from PS Layer</span>
+                        </button>
+                    </div>
+                    <textarea id="reverse-input" class="kp-textarea code" placeholder="Paste legacy FML text here to decode back to Malayalam..." rows="4"></textarea>
+                </div>
+
+                <div class="kp-code-box">
+                    <div class="kp-code-header">
+                        <span class="kp-code-title">Readable Malayalam Unicode</span>
+                        <button type="button" id="btn-copy-unicode" class="kp-btn-text">Copy Unicode</button>
+                    </div>
+                    <textarea id="reverse-output" class="kp-textarea" placeholder="Malayalam Unicode text appears here..." rows="4" readonly></textarea>
+                </div>
+            </div>
+        </main>
+
+        <!-- Tab 3: Export -->
+        <main id="tab-export" class="kp-tab-pane">
+            <div class="kp-main-editor">
+                <div class="kp-editor-container">
+                    <div class="kp-card-top-row">
+                        <span class="kp-font-title">Direct Canvas Export to Downloads</span>
+                    </div>
+                    <p style="font-size: 11px; color: var(--kp-text-muted); padding: 4px 6px; line-height: 1.4;">
+                        Export the active canvas directly to your system Downloads folder in high resolution.
+                    </p>
+                    <div class="kp-export-actions">
+                        <button type="button" id="btn-export-png-tab" class="kp-btn-action primary">
+                            <svg class="kp-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            <span>PNG to Downloads</span>
+                        </button>
+                        <button type="button" id="btn-export-jpg-tab" class="kp-btn-action secondary">
+                            <svg class="kp-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                <circle cx="12" cy="13" r="4"></circle>
+                            </svg>
+                            <span>JPG to Downloads</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Kuttipencil Word & Character Counter Footer -->
+        <footer class="kp-footer">
+            <div class="kp-counts">
+                <span>Words: <strong id="count-words" class="kp-highlight">0</strong></span>
+                <span class="kp-sep">|</span>
+                <span>Characters: <strong id="count-chars" class="kp-highlight">0</strong></span>
+            </div>
+            <div class="kp-status-msg" id="status-text">Ready</div>
+        </footer>
+
+        <!-- Signature Kuttipencil Rainbow Strip -->
+        <div class="kp-rainbow-bar"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/libs/CSInterface.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Version](https://img.shields.io/badge/Release-v1.1.0-DC2626?style=for-the-badge&logo=github)](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/tag/v1.1.0)
+[![Version](https://img.shields.io/badge/Release-v1.1.0-DC2626?style=for-the-badge&logo=github)](https://github.com/AbinVarghexe/kuttipencil-adobe/releases/tag/v1.1.0)
 [![Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-CC%202015%20--%202024%2B-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)](#-supported-hosts)
 [![Illustrator](https://img.shields.io/badge/Adobe%20Illustrator-CC%202015%20--%202024%2B-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white)](#-supported-hosts)
 [![Platform](https://img.shields.io/badge/OS-Windows%20%7C%20macOS-475569?style=for-the-badge)](#-installation)
@@ -14,7 +14,7 @@
 
 # 📦 Download v1.1.0 Release
 
-### **[👉 Click Here to Download KuttiPencil-v1.1.0.zip](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/download/v1.1.0/KuttiPencil-v1.1.0.zip)**
+### **[👉 Click Here to Download KuttiPencil-v1.1.0.zip](https://github.com/AbinVarghexe/kuttipencil-adobe/releases/download/v1.1.0/KuttiPencil-v1.1.0.zip)**
 
 *Includes 1-Click Automated Installers for both Photoshop & Illustrator on Windows and macOS.*
 
@@ -37,7 +37,7 @@ Installing KuttiPencil automatically sets up the extension for **both Adobe Phot
 ### 🪟 For Windows Users
 
 1. **Download and Extract**:
-   - Download **[KuttiPencil-v1.1.0.zip](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/download/v1.1.0/KuttiPencil-v1.1.0.zip)** and extract the zip file.
+   - Download **[KuttiPencil-v1.1.0.zip](https://github.com/AbinVarghexe/kuttipencil-adobe/releases/download/v1.1.0/KuttiPencil-v1.1.0.zip)** and extract the zip file.
 2. **Run the Installer**:
    - Double-click **`install-windows.bat`**.
    - *(It will automatically configure Adobe registry permissions and copy the extension to your Adobe CEP directory)*.
@@ -50,7 +50,7 @@ Installing KuttiPencil automatically sets up the extension for **both Adobe Phot
 ### 🍎 For macOS Users
 
 1. **Download and Extract**:
-   - Download **[KuttiPencil-v1.1.0.zip](https://github.com/AbinVarghexe/kuttipencil-photoshop/releases/download/v1.1.0/KuttiPencil-v1.1.0.zip)** and extract the folder.
+   - Download **[KuttiPencil-v1.1.0.zip](https://github.com/AbinVarghexe/kuttipencil-adobe/releases/download/v1.1.0/KuttiPencil-v1.1.0.zip)** and extract the folder.
 2. **Run the Installer**:
    - Open **Terminal**, navigate to the extracted folder, and run:
      ```bash
@@ -167,7 +167,7 @@ This Adobe Photoshop & Illustrator Extension was designed, developed, and engine
 
 **Abin Varghese**
 - **GitHub**: [@AbinVarghexe](https://github.com/AbinVarghexe)
-- **Repository**: [kuttipencil-photoshop](https://github.com/AbinVarghexe/kuttipencil-photoshop)
+- **Repository**: [kuttipencil-adobe](https://github.com/AbinVarghexe/kuttipencil-adobe)
 
 ---
 

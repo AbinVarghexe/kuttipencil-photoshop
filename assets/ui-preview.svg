@@ -1,0 +1,136 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Panel Frame -->
+  <rect width="800" height="520" rx="14" fill="#ECECF0"/>
+  <rect x="1" y="1" width="798" height="518" rx="13" stroke="#CBD5E1" stroke-width="2"/>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="800" height="60" rx="14" fill="#FFFFFF"/>
+  <rect x="0" y="46" width="800" height="14" fill="#FFFFFF"/>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Header Logo & Title -->
+  <g transform="translate(24, 14)">
+    <!-- Yellow Pencil Icon -->
+    <path d="M6 26L10 30L28 12L24 8L6 26Z" fill="#FBC02D"/>
+    <path d="M4 32L8 32L6 26L4 32Z" fill="#424242"/>
+    <path d="M24 8L28 12L31 9L27 5L24 8Z" fill="#E53935"/>
+    <line x1="12" y1="20" x2="16" y2="24" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <text x="40" y="22" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#DC2626">കുട്ടിപെൻസിൽ</text>
+    <text x="145" y="21" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Malayalam Typing Utility</text>
+  </g>
+
+  <!-- Header Action Button (Insert to PS) -->
+  <g transform="translate(630, 14)">
+    <rect width="146" height="32" rx="6" fill="#DC2626"/>
+    <!-- Plus SVG -->
+    <line x1="20" y1="16" x2="30" y2="16" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="25" y1="11" x2="25" y2="21" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+    <text x="38" y="21" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Insert to PS</text>
+  </g>
+
+  <!-- 3 Navigation Tabs (Convert, Decode, Export) -->
+  <g transform="translate(0, 60)">
+    <rect width="800" height="38" fill="#F1F5F9"/>
+    <line x1="0" y1="38" x2="800" y2="38" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Tab 1: Convert (Active) -->
+    <rect x="20" y="0" width="240" height="38" fill="#FFFFFF"/>
+    <line x1="20" y1="37" x2="260" y2="37" stroke="#DC2626" stroke-width="3"/>
+    <text x="110" y="24" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#DC2626">🔤 Convert</text>
+
+    <!-- Tab 2: Decode -->
+    <text x="380" y="24" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#64748B">🔄 Decode</text>
+
+    <!-- Tab 3: Export -->
+    <text x="640" y="24" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#64748B">📥 Export</text>
+  </g>
+
+  <!-- Toolbar Row (Tools & Radios) -->
+  <g transform="translate(0, 98)">
+    <rect width="800" height="42" fill="#FFFFFF"/>
+    <line x1="0" y1="42" x2="800" y2="42" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Action Icons -->
+    <g transform="translate(24, 8)">
+      <rect width="26" height="26" rx="4" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="7" y="18" font-family="sans-serif" font-size="12">🗑️</text>
+
+      <rect x="34" width="26" height="26" rx="4" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="41" y="18" font-family="sans-serif" font-size="12">📋</text>
+
+      <rect x="68" width="26" height="26" rx="4" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="75" y="18" font-family="sans-serif" font-size="12">🔄</text>
+    </g>
+
+    <!-- Radios -->
+    <g transform="translate(560, 13)">
+      <circle cx="8" cy="8" r="6" fill="#DC2626"/>
+      <circle cx="8" cy="8" r="2.5" fill="#FFF"/>
+      <text x="20" y="12" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#1E293B">Manglish Mode</text>
+
+      <circle cx="130" cy="8" r="6" fill="#FFF" stroke="#CBD5E1"/>
+      <text x="142" y="12" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#64748B">Direct Unicode</text>
+    </g>
+  </g>
+
+  <!-- Target Font Row -->
+  <g transform="translate(0, 140)">
+    <rect width="800" height="36" fill="#F8FAFC"/>
+    <line x1="0" y1="36" x2="800" y2="36" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <text x="24" y="23" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#64748B">TARGET FONT:</text>
+    
+    <rect x="120" y="6" width="300" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="130" y="22" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#1E293B">⭐ ML-TTIndulekhaHeavy (Default)</text>
+  </g>
+
+  <!-- Main Editor Area -->
+  <g transform="translate(24, 188)">
+    <!-- Input Box -->
+    <rect width="752" height="150" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="20" y="36" font-family="-apple-system, sans-serif" font-size="20" font-weight="500" fill="#0F172A">നമസ്കാരം, എന്റെ കേരളം</text>
+    <text x="20" y="65" font-family="-apple-system, sans-serif" font-size="12" font-weight="400" fill="#94A3B8">(Typed: "namaskaram, ente keralam")</text>
+
+    <!-- Suggestion Chips -->
+    <g transform="translate(20, 108)">
+      <rect width="90" height="26" rx="13" fill="#DC2626"/>
+      <text x="14" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">നമസ്കാരം</text>
+
+      <rect x="100" width="80" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="114" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#475569">കേരളം</text>
+
+      <rect x="190" width="90" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="204" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#475569">ചിത്തിരം</text>
+    </g>
+  </g>
+
+  <!-- Converted FML Output Box -->
+  <g transform="translate(24, 350)">
+    <rect width="752" height="96" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="16" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#991B1B">CONVERTED FML GLYPH CODE</text>
+    <text x="680" y="24" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#DC2626">Click to Copy</text>
+    
+    <text x="16" y="58" font-family="Consolas, monospace" font-size="16" font-weight="600" fill="#991B1B">\\a-kv-Im-cw, F-sâ tI-c-fw</text>
+    <text x="16" y="80" font-family="-apple-system, sans-serif" font-size="11" fill="#B91C1C">Ready to render in Photoshop text layers with ML-TT fonts</text>
+  </g>
+
+  <!-- Bottom Word & Char Counts Bar -->
+  <g transform="translate(0, 466)">
+    <rect width="800" height="46" fill="#FFFFFF"/>
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <text x="24" y="28" font-family="-apple-system, sans-serif" font-size="12" font-weight="500" fill="#64748B">Words: <tspan font-weight="700" fill="#DC2626">3</tspan>   |   Characters: <tspan font-weight="700" fill="#DC2626">24</tspan></text>
+    
+    <text x="640" y="28" font-family="-apple-system, sans-serif" font-size="11" font-weight="500" fill="#16A34A">● Ready in Photoshop</text>
+  </g>
+
+  <!-- Signature Bottom Rainbow Bar -->
+  <g transform="translate(0, 512)">
+    <rect x="0" y="0" width="160" height="8" rx="0" fill="#E53935"/>
+    <rect x="160" y="0" width="160" height="8" rx="0" fill="#FB8C00"/>
+    <rect x="320" y="0" width="160" height="8" rx="0" fill="#FDD835"/>
+    <rect x="480" y="0" width="160" height="8" rx="0" fill="#43A047"/>
+    <rect x="640" y="0" width="160" height="8" rx="0" fill="#1E88E5"/>
+  </g>
+</svg>

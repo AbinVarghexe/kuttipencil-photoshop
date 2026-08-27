@@ -1,0 +1,57 @@
+<svg width="860" height="220" viewBox="0 0 860 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="220" rx="12" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="858" height="218" rx="11" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Subtle Grid Dots Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#E2E8F0"/>
+  </pattern>
+  <rect width="860" height="212" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Pencil Logo -->
+  <g transform="translate(48, 48)">
+    <rect width="72" height="72" rx="16" fill="#FFFFFF" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.06))"/>
+    <rect x="0.5" y="0.5" width="71" height="71" rx="15.5" stroke="#CBD5E1"/>
+    
+    <!-- Stylized Yellow Pencil -->
+    <path d="M20 52L26 58L54 30L48 24L20 52Z" fill="#FBC02D"/>
+    <path d="M16 60L22 60L19 54L16 60Z" fill="#334155"/>
+    <path d="M48 24L54 30L58 26L52 20L48 24Z" fill="#DC2626"/>
+    <line x1="28" y1="44" x2="34" y2="50" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="17.5" cy="58.5" r="1" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Titles & Text -->
+  <text x="140" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" fill="#DC2626" letter-spacing="-0.5">കുട്ടിപെൻസിൽ</text>
+  <text x="325" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#475569">KuttiPencil for Adobe Photoshop</text>
+  
+  <text x="140" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#64748B">The Native Malayalam Typography &amp; FML / ML-TT Font Converter Panel</text>
+
+  <!-- Pill Badges -->
+  <g transform="translate(140, 142)">
+    <!-- Badge 1: Photoshop -->
+    <rect x="0" y="0" width="130" height="26" rx="13" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="14" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#1D4ED8">⚡ Photoshop CC</text>
+
+    <!-- Badge 2: ML-TT Fonts -->
+    <rect x="140" y="0" width="160" height="26" rx="13" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="154" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#DC2626">🔤 ML-TT &amp; FML Fonts</text>
+
+    <!-- Badge 3: 100pt Centered -->
+    <rect x="310" y="0" width="140" height="26" rx="13" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="324" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#16A34A">🎯 100pt Centered</text>
+
+    <!-- Badge 4: Open Source -->
+    <rect x="460" y="0" width="130" height="26" rx="13" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="474" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#475569">⭐ MIT Licensed</text>
+  </g>
+
+  <!-- Signature Bottom Rainbow Bar -->
+  <g transform="translate(0, 214)">
+    <rect x="0" y="0" width="172" height="6" rx="0" fill="#E53935"/>
+    <rect x="172" y="0" width="172" height="6" rx="0" fill="#FB8C00"/>
+    <rect x="344" y="0" width="172" height="6" rx="0" fill="#FDD835"/>
+    <rect x="516" y="0" width="172" height="6" rx="0" fill="#43A047"/>
+    <rect x="688" y="0" width="172" height="6" rx="0" fill="#1E88E5"/>
+  </g>
+</svg>
